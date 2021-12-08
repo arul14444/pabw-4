@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Apps</title>
+    <link rel="stylesheet" href="homePage.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="wrapper">
+            <div class="logo">Genkin itōbo</div>
+            <div class="menu">
+                <ul>
+                    <li><u>Home</u></li>
+                    <li><a href="#">Profil</a></li>
+                    <li><a href="#">Transaksi</a></li>
+                    <li><a href="#">Diagram </a></li>
+                    <li><a href="#">Hutang Piutang</a></li>
+                    <li><a href="#" class="tbl-biru" id="logout" onClick="return confirm('Apakah Anda Ingin Keluar?')">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <section id="home">
+            <div class = "gambarLogo"><img src="logo.png" width=500px; height=387px;></div>
+            <div class="kolom">
+                <p id="selamat"><b>Selamat datang <label id= "user"> </label> di Book-Apps. </b></p>
+                <h3>Pembukuan keuangan UKM mu dengan mudah dan efisien </h3>
+
+                <p>
+                    <table id = "tabelInfo">
+                        <tr height = "50px">
+                            <td>Pemasukan</td>
+                            <td>:</td>
+                            <td class="table" >Rp <label id ="jumlahPemasukan"> </label></td>
+                          </tr>
+                          <tr height = "50px">
+                            <td>Pengeluaran</td>
+                            <td>:</td>
+                            <td class ="table">Rp <label id ="jumlahPengeluaran"></label></td>
+                          </tr>
+                          <tr height = "50px">
+                            <td>Keuntungan</td>
+                            <td>:</td>
+                            <td class="table" >Rp <label id ="keuntungan"></label></td>
+                    </table>
+                </p>
+            </div>
+        </section>
+
+        <div id="copyright">
+            <div class="wrapper">
+                &copy; <b>Book-Apps.</b>2021 
+            </div>
+        </div>
+
+        <script src="homePage.js"></script>
+</body>
+</html>
